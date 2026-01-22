@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    
+    --bg-gradient-start: #c5d3e8;
+    
+    --bg-gradient-end: #93a1bd;
+    
+
+    
+    --foreground: 0 0% 0%;
+    --card: 222 32% 72%;
+    --card-foreground: 0 0% 0%;
+    --popover: 222 32% 72%;
+    --popover-foreground: 0 0% 0%;
+    --primary: 0 0% 0%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 222 20% 60%;
+    --secondary-foreground: 0 0% 0%;
+    --muted: 222 20% 60%;
+    --muted-foreground: 0 0% 20%;
+    --accent: 222 20% 60%;
+    --accent-foreground: 0 0% 0%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 0%;
+    --input: 0 0% 0%;
+    --ring: 0 0% 0%;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  
+  html,
+  body {
+    
+    background: radial-gradient(circle at 50% 0%, var(--bg-gradient-start) 0%, var(--bg-gradient-end) 100%) !important;
+    background-attachment: fixed !important;
+    
+    min-height: 100vh;
+    color: #000000 !important;
+    font-family: "Plus Jakarta Sans", sans-serif;
+  }
+
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .text-xl,
+  .text-2xl,
+  .text-lg,
+  .font-bold,
+  .font-semibold {
+    color: #000000 !important;
+    text-shadow: none !important;
+  }
+}
+
+
+.text-slate-900,
+.text-slate-500,
+.text-gray-500,
+.text-white {
+  color: #000000 !important;
+}
+
+button .text-white,
+.bg-black .text-white,
+.group:hover .text-indigo-900 {
+  color: #ffffff !important;
+}
+
+.bg-black {
+  color: white !important;
+}
